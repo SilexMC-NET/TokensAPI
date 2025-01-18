@@ -6,11 +6,11 @@ import java.util.UUID;
 public interface TokensAPI {
     BigInteger getTokens(UUID uniqueID);
 
-    String getTokens(UUID uniqueID, String format);
+    String getTokens(UUID uniqueID, boolean format);
 
     BigInteger getTotalTokens(UUID uniqueID);
 
-    String getTotalTokens(UUID uniqueID, String format);
+    String getTotalTokens(UUID uniqueID, boolean format);
 
     void setTokens(UUID uniqueID, BigInteger amount);
 
